@@ -8,7 +8,7 @@ print(credit_risk.head())
 df= credit_risk.copy()
 # As we seen Column ID has no meaning here so, we will remove it
 df.drop(["ID"], axis=1, inplace= True) #axis=1 -- column removal and inplcae= True --means change in the original data
-# Lets check the statistics of datas
+# Lets check the statistics of data
 print(df.describe())
 # checking for missing values
 print(df.isnull().sum())
